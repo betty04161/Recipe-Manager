@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Manager</title>
+  <script src="recipe.js"></script>
+</head>
+<body>
+  <h1>Recipe Manager</h1>
+  
+  <h2>Add a new recipe</h2>
+  <form>
+    <label for="recipeName">Recipe Name:</label>
+    <input type="text" id="recipeName" name="recipeName"><br>
+    
+    <label for="recipeIngredients">Recipe Ingredients:</label>
+    <input type="text" id="recipeIngredients" name="recipeIngredients"><br>
+    
+    <button type="button" onclick="addNewRecipe()">Add Recipe</button>
+  </form>
+  
+  <h2>See available recipes</h2>
+  <form>
+    <label for="availableIngredients">Available Ingredients:</label>
+    <input type="text" id="availableIngredients" name="availableIngredients"><br>
+    
+    <button type="button" onclick="showAvailableRecipes()">Find Recipes</button>
+  </form>
+  
+  <h2>Matching Recipes</h2>
+  <div id="matchingRecipes"></div>
+</body>
+</html>
